@@ -16,7 +16,7 @@ readings_tab[3:9] <- lapply(readings_tab[3:9], as.numeric)
 
 
 #1
-png(file="plot1.png", width = 480, height = 480, bg="transparent")
+png(file="plot1.png", width = 480, height = 480)
 hist(readings_tab$Global_active_power, col="red", main="Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
 

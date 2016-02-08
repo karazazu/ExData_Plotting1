@@ -15,7 +15,7 @@ readings_tab <- subset (data_tab, Date %in% c(ymd("2007-02-01"), ymd("2007-02-02
 readings_tab[3:9] <- lapply(readings_tab[3:9], as.numeric)
 
 #2
-png(file="plot2.png", width = 480, height = 480, bg="transparent")
+png(file="plot2.png", width = 480, height = 480)
 with( readings_tab, plot(Date+Time, Global_active_power, type="l", 
                          ylab="Global Active Power (kilowatts)",
                          xlab=""))

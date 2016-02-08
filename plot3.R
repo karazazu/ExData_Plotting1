@@ -18,7 +18,7 @@ readings_tab[3:9] <- lapply(readings_tab[3:9], as.numeric)
 
 
 #3
-png(file="plot3.png", width = 480, height = 480, bg="transparent")
+png(file="plot3.png", width = 480, height = 480)
 with( readings_tab, plot(Date+Time, Sub_metering_1,   type="l", ylab="Energy sub metering", xlab="", col="black"))
 with ( readings_tab, lines(Date+Time, Sub_metering_2, col="red"))
 with ( readings_tab, lines(Date+Time, Sub_metering_3, col="blue"))

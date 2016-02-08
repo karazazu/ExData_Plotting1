@@ -16,7 +16,7 @@ readings_tab[3:9] <- lapply(readings_tab[3:9], as.numeric)
 
 #4
 png(file="plot4.png", width = 480, height = 480)
-par(mfrow = c(2, 2), bg="transparent")
+par(mfrow = c(2, 2))
 #A
 with( readings_tab, plot(Date+Time, Global_active_power, type="l", 
                          ylab="Global Active Power (kilowatts)",
